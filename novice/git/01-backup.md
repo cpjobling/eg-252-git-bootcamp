@@ -38,13 +38,13 @@ Here's how Dracula sets up his new laptop:
 $ git config --global user.name "Vlad Dracula"
 $ git config --global user.email "vlad@tran.sylvan.ia"
 $ git config --global color.ui "auto"
-$ git config --global core.editor "nano"
+$ git config --global core.editor "notepad"
 ~~~
 {:class="in"}
 
 (Please use your own name and email address instead of Dracula's,
-and please make sure you choose an editor that's actually on your system,
-such as `notepad` on Windows.)
+and please make sure you choose an editor that's actually on your system.
+We've used `notepad` because that always available on Windows.)
 
 Git commands are written `git verb`,
 where `verb` is what we actually want it to do.
@@ -123,19 +123,19 @@ nothing to commit (create/copy files and use "git add" to track)
 
 Let's create a file called `mars.txt` that contains some notes
 about the Red Planet's suitability as a base.
-(We'll use `nano` to edit the file;
+(We'll use `notepad` to edit the file;
 you can use whatever editor you like.
 In particular, this does not have to be the core.editor you set globally earlier.)
 
 ~~~
-$ nano mars.txt
+$ notepad mars.txt
 ~~~
 {:class="in"}
 
 Type the text below into the `mars.txt` file:
 
 ~~~
-Cold and dry, but everything is my favorite color
+Cold and dry, but everything is my favourite colour
 ~~~
 {:class="in"}
 
@@ -154,7 +154,7 @@ $ cat mars.txt
 ~~~
 {:class="in"}
 ~~~
-Cold and dry, but everything is my favorite color
+Cold and dry, but everything is my favourite colour
 ~~~
 {:class="out"}
 
@@ -284,16 +284,16 @@ and the log message Git was given when the revision was created.
 #### Changing a File
 
 Now suppose Dracula adds more information to the file.
-(Again, we'll edit with `nano` and then `cat` the file to show its contents;
+(Again, we'll edit with `notepad` and then `cat` the file to show its contents;
 you may use a different editor, and don't need to `cat`.)
 
 ~~~
-$ nano mars.txt
+$ notepad mars.txt
 $ cat mars.txt
 ~~~
 {:class="in"}
 ~~~
-Cold and dry, but everything is my favorite color
+Cold and dry, but everything is my favourite colour
 The two moons may be a problem for Wolfman
 ~~~
 {:class="out"}
@@ -338,7 +338,7 @@ index df0654a..315bf3a 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,2 @@
- Cold and dry, but everything is my favorite color
+ Cold and dry, but everything is my favourite colour
 +The two moons may be a problem for Wolfman
 ~~~
 {:class="out"}
@@ -424,7 +424,7 @@ $ cat mars.txt
 ~~~
 {:class="in"}
 ~~~
-Cold and dry, but everything is my favorite color
+Cold and dry, but everything is my favourite colour
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 ~~~
@@ -439,7 +439,7 @@ index 315bf3a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
- Cold and dry, but everything is my favorite color
+ Cold and dry, but everything is my favourite colour
  The two moons may be a problem for Wolfman
 +But the Mummy will appreciate the lack of humidity
 ~~~
@@ -474,7 +474,7 @@ index 315bf3a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
- Cold and dry, but everything is my favorite color
+ Cold and dry, but everything is my favourite colour
  The two moons may be a problem for Wolfman
 +But the Mummy will appreciate the lack of humidity
 ~~~
@@ -551,7 +551,7 @@ index 315bf3a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
- Cold and dry, but everything is my favorite color
+ Cold and dry, but everything is my favourite colour
  The two moons may be a problem for Wolfman
 +But the Mummy will appreciate the lack of humidity
 ~~~
@@ -566,7 +566,7 @@ index df0654a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,3 @@
- Cold and dry, but everything is my favorite color
+ Cold and dry, but everything is my favourite colour
 +The two moons may be a problem for Wolfman
 +But the Mummy will appreciate the lack of humidity
 ~~~
@@ -601,7 +601,7 @@ index df0654a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,3 @@
- Cold and dry, but everything is my favorite color
+ Cold and dry, but everything is my favourite colour
 +The two moons may be a problem for Wolfman
 +But the Mummy will appreciate the lack of humidity
 ~~~
@@ -621,7 +621,7 @@ index df0654a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,3 @@
- Cold and dry, but everything is my favorite color
+ Cold and dry, but everything is my favourite colour
 +The two moons may be a problem for Wolfman
 +But the Mummy will appreciate the lack of humidity
 ~~~
@@ -672,7 +672,7 @@ $ cat mars.txt
 ~~~
 {:class="in"}
 ~~~
-Cold and dry, but everything is my favorite color
+Cold and dry, but everything is my favourite colour
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 ~~~
