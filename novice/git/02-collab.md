@@ -72,7 +72,6 @@ but much less work for beginners to set up:
 Copy that URL from the browser,
 go into the local `planets` repository,
 and run this command:
-
 ~~~
 $ git remote add origin https://github.com/vlad/planets
 ~~~

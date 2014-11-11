@@ -232,7 +232,7 @@ and its short identifier is `f22b25e`.
 We use the `-m` flag (for "message")
 to record a comment that will help us remember later on what we did and why.
 If we just run `git commit` without the `-m` option,
-Git will launch `nano` (or whatever other editor we configured at the start)
+Git will launch `notepad` (or whatever other editor we configured at the start)
 so that we can write a longer message.
 
 If we run `git status` now:
@@ -419,7 +419,7 @@ First,
 we'll add another line to the file:
 
 ~~~
-$ nano mars.txt
+$ notepad mars.txt
 $ cat mars.txt
 ~~~
 {:class="in"}
@@ -635,7 +635,7 @@ can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
 ~~~
-$ nano mars.txt
+$ notepad mars.txt
 $ cat mars.txt
 ~~~
 {:class="in"}
@@ -765,7 +765,7 @@ so let's tell Git to ignore them.
 We do this by creating a file in the root directory of our project called `.gitignore`.
 
 ~~~
-$ nano .gitignore
+$ notepad .gitignore
 $ cat .gitignore
 ~~~
 {:class="in"}

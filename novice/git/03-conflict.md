@@ -39,7 +39,7 @@ But the Mummy will appreciate the lack of humidity
 Let's add a line to the copy under our home directory:
 
 ~~~
-$ nano mars.txt
+$ notepad mars.txt
 $ cat mars.txt
 ~~~
 {:class="in"}
@@ -88,7 +88,7 @@ and make a different change there
 
 ~~~
 $ cd /tmp/planets
-$ nano mars.txt
+$ notepad mars.txt
 $ cat mars.txt
 ~~~
 {:class="in"}
@@ -259,7 +259,7 @@ so we don't have to fix things by hand again
 if we switch back to the repository in our home directory and pull from GitHub:
 
 ~~~
-$ cd ~/planets
+$ cd /h/work/eg-252/planets
 $ git pull origin master
 ~~~
 {:class="in"}
@@ -318,7 +318,12 @@ and modify an existing file (your instructor will tell you which one).
 When asked by your instructor,
 pull her changes from the repository to create a conflict,
 then resolve it.
-</div>
+
+Note full details of this
+exercisei, and how it
+will be assessed, are given on
+Blackboard in the section entitled
+**Assessed Exercise: Down the Rabbit Hole** and the sections that follow in the Lab Exercise folder.</div>
 
 <div class="challenge" markdown="1">
 What does Git do
